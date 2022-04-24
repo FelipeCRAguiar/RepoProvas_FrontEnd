@@ -2,6 +2,7 @@ import { BottomBox, Button, Form, Input, Instruction, StyledLink } from "../../C
 import logoImg from "../../Assets/logoImg.svg"
 import styled from "styled-components";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 export default function Login() {
@@ -22,8 +23,8 @@ export default function Login() {
       <img src={logoImg} alt='logo'/>
       <Form onSubmit={handleSubmit}>
         <Instruction>Login</Instruction>
-        <Input type="email" placeholder="email" name="email" value={formData.email} onChange={handleChange} disabled={isDisabled} />
-        <Input type="password" placeholder="password" name="password" value={formData.password} onChange={handleChange} disabled={isDisabled} />
+        <Input type="email" placeholder="Email" name="email" value={formData.email} onChange={handleChange} disabled={isDisabled} />
+        <Input type="password" placeholder="Senha" name="password" value={formData.password} onChange={handleChange} disabled={isDisabled} />
         <BottomBox>
           <StyledLink to="/sign-up">Não possui cadastro?</StyledLink>
           <Button type="submit" style={{ cursor: "pointer" }} disabled={isDisabled}>ENTRAR</Button>

@@ -56,8 +56,6 @@ const Button = styled.button`
   line-height: 24px;
   letter-spacing: 0.4px;
   color: #FFFFFF;
-
-
 `
 
 const StyledLink = styled(Link)`
@@ -70,11 +68,28 @@ const StyledLink = styled(Link)`
   color: rgba(70, 115, 202, 0.8);
 `
 
+const Button2 = styled.button`
+  width: 116px;
+  height: 36px;
+  background-color: #1976D2;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: none;
+
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+`
+
 export {
   Form,
   Instruction,
   Input,
   BottomBox,
   Button,
-  StyledLink
+  StyledLink,
+  Button2
 }
