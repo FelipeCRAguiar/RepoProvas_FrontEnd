@@ -32,7 +32,7 @@ const Input = styled.input`
   color: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   border-color: #C0C0C0;
-  border: 2px solid;
+  border: 1px solid;
 `
 
 const BottomBox = styled.div`
